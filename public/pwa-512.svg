@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#f6f1e9" />
+  <rect x="52" y="52" width="408" height="408" rx="92" fill="#ffffff" />
+  <rect x="86" y="86" width="114" height="340" rx="48" fill="#153a74" />
+  <rect x="199" y="86" width="114" height="340" rx="48" fill="#f7f1e8" />
+  <rect x="312" y="86" width="114" height="340" rx="48" fill="#b73434" />
+  <circle cx="256" cy="256" r="118" fill="#ffffff" stroke="#d59a28" stroke-width="20" />
+  <text x="256" y="290" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="96" font-weight="800" fill="#153a74">CR</text>
+</svg>

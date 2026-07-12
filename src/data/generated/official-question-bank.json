@@ -1,0 +1,1256 @@
+[
+  {
+    "id": "cr-001",
+    "order": 1,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Parmi les propositions suivantes, laquelle constitue une participation citoyenne ?"
+  },
+  {
+    "id": "cr-002",
+    "order": 2,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Que garantit la liberté d’expression ?"
+  },
+  {
+    "id": "cr-003",
+    "order": 3,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "À quoi sert un titre de séjour ?"
+  },
+  {
+    "id": "cr-004",
+    "order": 4,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "La liberté de circulation permet à toute personne de :"
+  },
+  {
+    "id": "cr-005",
+    "order": 5,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Sur quel site internet peut-on retrouver le symbole de la République française ?"
+  },
+  {
+    "id": "cr-006",
+    "order": 6,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Complétez ces paroles de la Marseillaise : \"Aux armes […] ! Formez vos bataillons\""
+  },
+  {
+    "id": "cr-007",
+    "order": 7,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Complétez les paroles de la Marseillaise : \"Allons enfants de la patrie […]\""
+  },
+  {
+    "id": "cr-008",
+    "order": 8,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "En application de la liberté individuelle, quelle proposition est correcte ? Une personne peut :"
+  },
+  {
+    "id": "cr-009",
+    "order": 9,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Concernant la pratique de la religion, quelle proposition est correcte ?"
+  },
+  {
+    "id": "cr-010",
+    "order": 10,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "En tant que parent, peut-on refuser que son enfant participe aux cours de sport à l'école car ils sont mixtes ?"
+  },
+  {
+    "id": "cr-011",
+    "order": 11,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Quelle est la devise de la France ?"
+  },
+  {
+    "id": "cr-012",
+    "order": 12,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "La répudiation de sa femme est :"
+  },
+  {
+    "id": "cr-013",
+    "order": 13,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Les impôts permettent de financer les dépenses publiques. Quelle proposition est correcte ?"
+  },
+  {
+    "id": "cr-014",
+    "order": 14,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Peut-on brûler publiquement un drapeau français ?"
+  },
+  {
+    "id": "cr-015",
+    "order": 15,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Que fait l’État pour lutter contre les discriminations ?"
+  },
+  {
+    "id": "cr-016",
+    "order": 16,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Que représente Marianne ?"
+  },
+  {
+    "id": "cr-017",
+    "order": 17,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Qu'est-ce que la liberté d'association ?"
+  },
+  {
+    "id": "cr-018",
+    "order": 18,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Qu'est-ce que la liberté ?"
+  },
+  {
+    "id": "cr-019",
+    "order": 19,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Qu'est-ce que la Marseillaise ?"
+  },
+  {
+    "id": "cr-020",
+    "order": 20,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Sur quel document peut-on voir Marianne ?"
+  },
+  {
+    "id": "cr-021",
+    "order": 21,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Un employeur refuse d’embaucher des femmes dans son entreprise. Que dit la loi ?"
+  },
+  {
+    "id": "cr-022",
+    "order": 22,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Une des valeurs de la devise républicaine est l'égalité. Qu'est-ce que cela signifie ?"
+  },
+  {
+    "id": "cr-023",
+    "order": 23,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Quelle est la place de la langue française dans la République ?"
+  },
+  {
+    "id": "cr-024",
+    "order": 24,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Quels sont des symboles officiels de la République française ?"
+  },
+  {
+    "id": "cr-025",
+    "order": 25,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "A-t-on le droit d'insulter publiquement quelqu’un parce qu’il est différent (handicap, apparence physique, sexe…) ?"
+  },
+  {
+    "id": "cr-026",
+    "order": 26,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Le régime de la France est :"
+  },
+  {
+    "id": "cr-027",
+    "order": 27,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Pourquoi le principe de laïcité doit-il être respecté à l'école ?"
+  },
+  {
+    "id": "cr-028",
+    "order": 28,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "En quelle année la loi de séparation des Églises et de l'Etat a-t-elle été votée ?"
+  },
+  {
+    "id": "cr-029",
+    "order": 29,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Une personne a-t-elle le droit de ne pas croire en une religion ?"
+  },
+  {
+    "id": "cr-030",
+    "order": 30,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Quel droit est garanti par la laïcité ?"
+  },
+  {
+    "id": "cr-031",
+    "order": 31,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "À l'école publique, qui peut porter des signes religieux très visibles ?"
+  },
+  {
+    "id": "cr-032",
+    "order": 32,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Selon le principe de laïcité, que signifie la neutralité de l’État ?"
+  },
+  {
+    "id": "cr-033",
+    "order": 33,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Que peut faire un usager du service public dans une mairie ?"
+  },
+  {
+    "id": "cr-034",
+    "order": 34,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Qui doit respecter le principe de neutralité religieuse dans une préfecture ?"
+  },
+  {
+    "id": "cr-035",
+    "order": 35,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "La laïcité impose-t-elle aux agents publics d'être neutres vis-à-vis des usagers ?"
+  },
+  {
+    "id": "cr-036",
+    "order": 36,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Que garantit le principe de laïcité ?"
+  },
+  {
+    "id": "cr-037",
+    "order": 37,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "A-t-on le droit de changer de religion ?"
+  },
+  {
+    "id": "cr-038",
+    "order": 38,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Que représente la laïcité ?"
+  },
+  {
+    "id": "cr-039",
+    "order": 39,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Qu'est ce qui est interdit par la Charte de la laïcité à l'école ?"
+  },
+  {
+    "id": "cr-040",
+    "order": 40,
+    "theme": "Principes et valeurs de la République",
+    "prompt": "Que dit l'article 1er de la Constitution française ?"
+  },
+  {
+    "id": "cr-041",
+    "order": 41,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qu'est-ce que l'État de droit ?"
+  },
+  {
+    "id": "cr-042",
+    "order": 42,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Le président de la République a commis un crime. Quelle proposition est correcte ?"
+  },
+  {
+    "id": "cr-043",
+    "order": 43,
+    "theme": "Système institutionnel et politique",
+    "prompt": "La loi est l'expression de :"
+  },
+  {
+    "id": "cr-044",
+    "order": 44,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quelle est la durée du mandat du conseil municipal et du maire ?"
+  },
+  {
+    "id": "cr-045",
+    "order": 45,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Que garantit l’État de droit ?"
+  },
+  {
+    "id": "cr-046",
+    "order": 46,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Une personne peut-elle voter à la place d'une autre ?"
+  },
+  {
+    "id": "cr-047",
+    "order": 47,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Est-ce que le vote est obligatoire ?"
+  },
+  {
+    "id": "cr-048",
+    "order": 48,
+    "theme": "Système institutionnel et politique",
+    "prompt": "À la fin de son mandat, le président de la République peut-il décider de rester au pouvoir ?"
+  },
+  {
+    "id": "cr-049",
+    "order": 49,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qui dirige l'action du Gouvernement ?"
+  },
+  {
+    "id": "cr-050",
+    "order": 50,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qui nomme le Premier ministre ?"
+  },
+  {
+    "id": "cr-051",
+    "order": 51,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quelle est l'organisation administrative de la France ?"
+  },
+  {
+    "id": "cr-052",
+    "order": 52,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qu'est-ce que le pouvoir législatif ? Le pouvoir :"
+  },
+  {
+    "id": "cr-053",
+    "order": 53,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Pourquoi séparer les trois pouvoirs dans une démocratie ?"
+  },
+  {
+    "id": "cr-054",
+    "order": 54,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qui sanctionne l'auteur d'un vol ?"
+  },
+  {
+    "id": "cr-055",
+    "order": 55,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est le rôle du gouvernement ?"
+  },
+  {
+    "id": "cr-056",
+    "order": 56,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Que se passe-t-il si un ministre ne respecte pas la loi ?"
+  },
+  {
+    "id": "cr-057",
+    "order": 57,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Combien de députés composent l’Assemblée nationale ?"
+  },
+  {
+    "id": "cr-058",
+    "order": 58,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qui peut voter aux élections en France ?"
+  },
+  {
+    "id": "cr-059",
+    "order": 59,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Pour combien de temps sont élus les sénateurs ?"
+  },
+  {
+    "id": "cr-060",
+    "order": 60,
+    "theme": "Système institutionnel et politique",
+    "prompt": "La séparation des pouvoirs est un principe fondamental. Quels sont les trois pouvoirs concernés ?"
+  },
+  {
+    "id": "cr-061",
+    "order": 61,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Est-ce que le président de la République a tous les pouvoirs ?"
+  },
+  {
+    "id": "cr-062",
+    "order": 62,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qui est le préfet ?"
+  },
+  {
+    "id": "cr-063",
+    "order": 63,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quelle condition est nécessaire pour voter aux élections ?"
+  },
+  {
+    "id": "cr-064",
+    "order": 64,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qui dirige la commune ?"
+  },
+  {
+    "id": "cr-065",
+    "order": 65,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est le régime politique de la France aujourd'hui ?"
+  },
+  {
+    "id": "cr-066",
+    "order": 66,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qu'est-ce que l'Hôtel de Matignon ?"
+  },
+  {
+    "id": "cr-067",
+    "order": 67,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Le Parlement est composé :"
+  },
+  {
+    "id": "cr-068",
+    "order": 68,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est le rôle du président de la République ?"
+  },
+  {
+    "id": "cr-069",
+    "order": 69,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est le rôle du Premier ministre ?"
+  },
+  {
+    "id": "cr-070",
+    "order": 70,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Qui est le chef du Gouvernement ?"
+  },
+  {
+    "id": "cr-071",
+    "order": 71,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Combien y a-t-il de régions en France ?"
+  },
+  {
+    "id": "cr-072",
+    "order": 72,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est le rôle du Défenseur des droits ?"
+  },
+  {
+    "id": "cr-073",
+    "order": 73,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Depuis quand l'euro est-elle la monnaie unique ?"
+  },
+  {
+    "id": "cr-074",
+    "order": 74,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est le rôle principal du département ?"
+  },
+  {
+    "id": "cr-075",
+    "order": 75,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est le rôle principal des communes ?"
+  },
+  {
+    "id": "cr-076",
+    "order": 76,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Combien de communes environ existe-t-il en France ?"
+  },
+  {
+    "id": "cr-077",
+    "order": 77,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel traité concerne la construction de l'Union européenne ?"
+  },
+  {
+    "id": "cr-078",
+    "order": 78,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel État a quitté l'Union européenne en 2020 ?"
+  },
+  {
+    "id": "cr-079",
+    "order": 79,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quelle est la devise de l’Union européenne ?"
+  },
+  {
+    "id": "cr-080",
+    "order": 80,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel est l'hymne de l'Union européenne ?"
+  },
+  {
+    "id": "cr-081",
+    "order": 81,
+    "theme": "Système institutionnel et politique",
+    "prompt": "De quoi est composé le drapeau européen ?"
+  },
+  {
+    "id": "cr-082",
+    "order": 82,
+    "theme": "Système institutionnel et politique",
+    "prompt": "De quelle couleur est le drapeau européen ?"
+  },
+  {
+    "id": "cr-083",
+    "order": 83,
+    "theme": "Système institutionnel et politique",
+    "prompt": "En quelle année le traité de Maastricht, qui marque la fondation de l'Union européenne, a-t-il été signé ?"
+  },
+  {
+    "id": "cr-084",
+    "order": 84,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Où est le siège du Parlement européen ?"
+  },
+  {
+    "id": "cr-085",
+    "order": 85,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Où est le siège de la Commission européenne ?"
+  },
+  {
+    "id": "cr-086",
+    "order": 86,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel État n'est pas membre de l'Union européenne ?"
+  },
+  {
+    "id": "cr-087",
+    "order": 87,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quand célèbre-t-on la journée de l'Europe ?"
+  },
+  {
+    "id": "cr-088",
+    "order": 88,
+    "theme": "Système institutionnel et politique",
+    "prompt": "À quelle fréquence les élections européennes sont-elles organisées ?"
+  },
+  {
+    "id": "cr-089",
+    "order": 89,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quelle condition est nécessaire pour voter aux élections européennes ?"
+  },
+  {
+    "id": "cr-090",
+    "order": 90,
+    "theme": "Système institutionnel et politique",
+    "prompt": "Quel pays est un pays fondateur de l'Union européenne ?"
+  },
+  {
+    "id": "cr-091",
+    "order": 91,
+    "theme": "Droits et devoirs",
+    "prompt": "À quelle liberté la PMA fait-elle référence ?"
+  },
+  {
+    "id": "cr-092",
+    "order": 92,
+    "theme": "Droits et devoirs",
+    "prompt": "Au nom de quoi l'État justifie-t-il la restriction des droits ?"
+  },
+  {
+    "id": "cr-093",
+    "order": 93,
+    "theme": "Droits et devoirs",
+    "prompt": "Concernant le droit de se marier, quelle proposition est correcte ?"
+  },
+  {
+    "id": "cr-094",
+    "order": 94,
+    "theme": "Droits et devoirs",
+    "prompt": "Est-il toujours possible de divorcer ?"
+  },
+  {
+    "id": "cr-095",
+    "order": 95,
+    "theme": "Droits et devoirs",
+    "prompt": "La peine de mort est :"
+  },
+  {
+    "id": "cr-096",
+    "order": 96,
+    "theme": "Droits et devoirs",
+    "prompt": "Laquelle de ces citations est inscrite dans la Déclaration des Droits de l'homme et du Citoyen de 1789 ?"
+  },
+  {
+    "id": "cr-097",
+    "order": 97,
+    "theme": "Droits et devoirs",
+    "prompt": "Le recours à l'avortement est-il autorisé ?"
+  },
+  {
+    "id": "cr-098",
+    "order": 98,
+    "theme": "Droits et devoirs",
+    "prompt": "Que contient la Constitution ?"
+  },
+  {
+    "id": "cr-099",
+    "order": 99,
+    "theme": "Droits et devoirs",
+    "prompt": "Que garantit la liberté de la presse ?"
+  },
+  {
+    "id": "cr-100",
+    "order": 100,
+    "theme": "Droits et devoirs",
+    "prompt": "Que prévoit la Charte de l'environnement ?"
+  },
+  {
+    "id": "cr-101",
+    "order": 101,
+    "theme": "Droits et devoirs",
+    "prompt": "Que signifie la dignité humaine ?"
+  },
+  {
+    "id": "cr-102",
+    "order": 102,
+    "theme": "Droits et devoirs",
+    "prompt": "Que signifie le droit de manifester ?"
+  },
+  {
+    "id": "cr-103",
+    "order": 103,
+    "theme": "Droits et devoirs",
+    "prompt": "Que signifie PMA ?"
+  },
+  {
+    "id": "cr-104",
+    "order": 104,
+    "theme": "Droits et devoirs",
+    "prompt": "Quel texte est le plus difficile à modifier ?"
+  },
+  {
+    "id": "cr-105",
+    "order": 105,
+    "theme": "Droits et devoirs",
+    "prompt": "Quelle liberté permet à une personne de croire en la religion de son choix ?"
+  },
+  {
+    "id": "cr-106",
+    "order": 106,
+    "theme": "Droits et devoirs",
+    "prompt": "Qu'est-ce que le droit de grève ?"
+  },
+  {
+    "id": "cr-107",
+    "order": 107,
+    "theme": "Droits et devoirs",
+    "prompt": "Qu'est-ce que la Constitution ?"
+  },
+  {
+    "id": "cr-108",
+    "order": 108,
+    "theme": "Droits et devoirs",
+    "prompt": "Qui peut demander à avorter ?"
+  },
+  {
+    "id": "cr-109",
+    "order": 109,
+    "theme": "Droits et devoirs",
+    "prompt": "Une femme majeure de nationalité française a-t-elle le droit de voter aux élections ?"
+  },
+  {
+    "id": "cr-110",
+    "order": 110,
+    "theme": "Droits et devoirs",
+    "prompt": "Concernant l'utilisation des réseaux sociaux, quelle proposition est correcte ?"
+  },
+  {
+    "id": "cr-111",
+    "order": 111,
+    "theme": "Droits et devoirs",
+    "prompt": "Jeter un mégot par terre est :"
+  },
+  {
+    "id": "cr-112",
+    "order": 112,
+    "theme": "Droits et devoirs",
+    "prompt": "L'État peut-il limiter les droits et libertés ?"
+  },
+  {
+    "id": "cr-113",
+    "order": 113,
+    "theme": "Droits et devoirs",
+    "prompt": "Parmi ces actions, laquelle permet d'adopter une attitude respectueuse de l’environnement ?"
+  },
+  {
+    "id": "cr-114",
+    "order": 114,
+    "theme": "Droits et devoirs",
+    "prompt": "Quelle proposition constitue une obligation ?"
+  },
+  {
+    "id": "cr-115",
+    "order": 115,
+    "theme": "Droits et devoirs",
+    "prompt": "Pour quel motif peut-on limiter la liberté d'expression ?"
+  },
+  {
+    "id": "cr-116",
+    "order": 116,
+    "theme": "Droits et devoirs",
+    "prompt": "Pourquoi doit-on trier ses déchets ?"
+  },
+  {
+    "id": "cr-117",
+    "order": 117,
+    "theme": "Droits et devoirs",
+    "prompt": "Que doit faire une victime de violences ?"
+  },
+  {
+    "id": "cr-118",
+    "order": 118,
+    "theme": "Droits et devoirs",
+    "prompt": "Que doit-on faire face aux ordres des policiers ou gendarmes ?"
+  },
+  {
+    "id": "cr-119",
+    "order": 119,
+    "theme": "Droits et devoirs",
+    "prompt": "Quel est le rôle de la police ?"
+  },
+  {
+    "id": "cr-120",
+    "order": 120,
+    "theme": "Droits et devoirs",
+    "prompt": "Quel est un exemple d’assistance à personne en danger ?"
+  },
+  {
+    "id": "cr-121",
+    "order": 121,
+    "theme": "Droits et devoirs",
+    "prompt": "Quel exemple illustre une limitation de liberté pour protéger l'intérêt général ?"
+  },
+  {
+    "id": "cr-122",
+    "order": 122,
+    "theme": "Droits et devoirs",
+    "prompt": "Quelle est l’attitude à avoir lorsque qu'on est témoin de violences ?"
+  },
+  {
+    "id": "cr-123",
+    "order": 123,
+    "theme": "Droits et devoirs",
+    "prompt": "Quelle est l'infraction la plus grave ?"
+  },
+  {
+    "id": "cr-124",
+    "order": 124,
+    "theme": "Droits et devoirs",
+    "prompt": "Quelle obligation concerne toutes les personnes résidant en France quelle que soit leur nationalité ?"
+  },
+  {
+    "id": "cr-125",
+    "order": 125,
+    "theme": "Droits et devoirs",
+    "prompt": "Quelle proposition représente un exemple de crime ?"
+  },
+  {
+    "id": "cr-126",
+    "order": 126,
+    "theme": "Droits et devoirs",
+    "prompt": "Quelle proposition représente un exemple de délit ?"
+  },
+  {
+    "id": "cr-127",
+    "order": 127,
+    "theme": "Droits et devoirs",
+    "prompt": "Qui veille au maintien de l’ordre public ?"
+  },
+  {
+    "id": "cr-128",
+    "order": 128,
+    "theme": "Droits et devoirs",
+    "prompt": "S'agissant des déchets, quelle proposition est correcte ?"
+  },
+  {
+    "id": "cr-129",
+    "order": 129,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel était le surnom de Louis XIV ?"
+  },
+  {
+    "id": "cr-130",
+    "order": 130,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel roi de France a été exécuté pendant la Révolution française ?"
+  },
+  {
+    "id": "cr-131",
+    "order": 131,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "En quelle année Napoléon Ier est-il devenu empereur ?"
+  },
+  {
+    "id": "cr-132",
+    "order": 132,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Lequel de ces personnages a un lien avec la République française ?"
+  },
+  {
+    "id": "cr-133",
+    "order": 133,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "De quand date l'appel à la résistance du général de Gaulle ?"
+  },
+  {
+    "id": "cr-134",
+    "order": 134,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Pourquoi la Shoah est-elle étudiée à l'école ?"
+  },
+  {
+    "id": "cr-135",
+    "order": 135,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel pays a été colonisé par la France ?"
+  },
+  {
+    "id": "cr-136",
+    "order": 136,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Depuis quand les Français élisent-ils le président de la République au suffrage universel direct ?"
+  },
+  {
+    "id": "cr-137",
+    "order": 137,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle est la première étape de la construction européenne en 1951 ?"
+  },
+  {
+    "id": "cr-138",
+    "order": 138,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Durant le mandat de quel président la peine de mort a-t-elle été abolie ?"
+  },
+  {
+    "id": "cr-139",
+    "order": 139,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel régime politique a été mis en place pendant la Révolution française en 1792 ?"
+  },
+  {
+    "id": "cr-140",
+    "order": 140,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Qui était une figure de la Résistance française pendant la Seconde Guerre mondiale ?"
+  },
+  {
+    "id": "cr-141",
+    "order": 141,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "En 1944, qu'est-ce qui a changé pour les femmes ?"
+  },
+  {
+    "id": "cr-142",
+    "order": 142,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle organisation internationale a été créée en 1945 après la Seconde Guerre mondiale ?"
+  },
+  {
+    "id": "cr-143",
+    "order": 143,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle peine a été supprimée en 1981 ?"
+  },
+  {
+    "id": "cr-144",
+    "order": 144,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "En quelle année l'euro est-elle devenue la monnaie utilisée en France ?"
+  },
+  {
+    "id": "cr-145",
+    "order": 145,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "En quelle année a commencé la Première Guerre mondiale ?"
+  },
+  {
+    "id": "cr-146",
+    "order": 146,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Où a eu lieu le débarquement en 1944 ?"
+  },
+  {
+    "id": "cr-147",
+    "order": 147,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel continent a été le plus concerné par la décolonisation française après la Seconde Guerre mondiale ?"
+  },
+  {
+    "id": "cr-148",
+    "order": 148,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Que fête-t-on le 8 mai ?"
+  },
+  {
+    "id": "cr-149",
+    "order": 149,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle mer ou océan borde la France métropolitaine ?"
+  },
+  {
+    "id": "cr-150",
+    "order": 150,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel pays a une frontière terrestre avec la France métropolitaine ?"
+  },
+  {
+    "id": "cr-151",
+    "order": 151,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle ville française est un port maritime ?"
+  },
+  {
+    "id": "cr-152",
+    "order": 152,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle mer se situe entre la France et l'Angleterre ?"
+  },
+  {
+    "id": "cr-153",
+    "order": 153,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Qu'est ce que la France d'outre-mer ?"
+  },
+  {
+    "id": "cr-154",
+    "order": 154,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle chaîne de montagnes est située entre la France et l’Espagne ?"
+  },
+  {
+    "id": "cr-155",
+    "order": 155,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle île française se trouve dans l'océan Indien ?"
+  },
+  {
+    "id": "cr-156",
+    "order": 156,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle est la population approximative de la France en 2025 ?"
+  },
+  {
+    "id": "cr-157",
+    "order": 157,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel fleuve traverse Paris ?"
+  },
+  {
+    "id": "cr-158",
+    "order": 158,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Lequel de ces pays partage des frontières terrestres avec la France ?"
+  },
+  {
+    "id": "cr-159",
+    "order": 159,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel pays a une frontière avec la France métropolitaine au nord-est ?"
+  },
+  {
+    "id": "cr-160",
+    "order": 160,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Où se trouvent les principales activités économiques en France ?"
+  },
+  {
+    "id": "cr-161",
+    "order": 161,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Parmi ces pays, lequel attire le plus de visiteurs chaque année ?"
+  },
+  {
+    "id": "cr-162",
+    "order": 162,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Où habite la majorité des Français ?"
+  },
+  {
+    "id": "cr-163",
+    "order": 163,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle région est la plus peuplée ?"
+  },
+  {
+    "id": "cr-164",
+    "order": 164,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle ville française fait partie des 10 plus grandes métropoles du pays ?"
+  },
+  {
+    "id": "cr-165",
+    "order": 165,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Lequel de ces départements de France est le plus touristique ?"
+  },
+  {
+    "id": "cr-166",
+    "order": 166,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quand peut-on visiter gratuitement des lieux culturels en France ?"
+  },
+  {
+    "id": "cr-167",
+    "order": 167,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Combien de personnes parlent français dans le monde ?"
+  },
+  {
+    "id": "cr-168",
+    "order": 168,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Qui était Marguerite Yourcenar ?"
+  },
+  {
+    "id": "cr-169",
+    "order": 169,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel peintre est français ?"
+  },
+  {
+    "id": "cr-170",
+    "order": 170,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel musée est situé à Paris ?"
+  },
+  {
+    "id": "cr-171",
+    "order": 171,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Qui était Auguste Rodin ?"
+  },
+  {
+    "id": "cr-172",
+    "order": 172,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quel est le classement de la langue française parmi les langues les plus parlées dans le monde ?"
+  },
+  {
+    "id": "cr-173",
+    "order": 173,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle cathédrale célèbre a été en partie détruite par un incendie en 2019 ?"
+  },
+  {
+    "id": "cr-174",
+    "order": 174,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Qui était une écrivaine française célèbre ?"
+  },
+  {
+    "id": "cr-175",
+    "order": 175,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Qui était un célèbre musicien français ?"
+  },
+  {
+    "id": "cr-176",
+    "order": 176,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Qui était Auguste Renoir ?"
+  },
+  {
+    "id": "cr-177",
+    "order": 177,
+    "theme": "Histoire, géographie et culture",
+    "prompt": "Quelle fête est française ?"
+  },
+  {
+    "id": "cr-178",
+    "order": 178,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quel mariage est reconnu par l'État ?"
+  },
+  {
+    "id": "cr-179",
+    "order": 179,
+    "theme": "Vivre dans la société française",
+    "prompt": "Auprès de quelle institution les parents peuvent-ils inscrire leur enfant à l'école publique ?"
+  },
+  {
+    "id": "cr-180",
+    "order": 180,
+    "theme": "Vivre dans la société française",
+    "prompt": "En cas de divorce, qui exerce l'autorité parentale ?"
+  },
+  {
+    "id": "cr-181",
+    "order": 181,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quelle aide permet aux personnes qui ont des difficultés financières d'avoir un avocat ?"
+  },
+  {
+    "id": "cr-182",
+    "order": 182,
+    "theme": "Vivre dans la société française",
+    "prompt": "Où faut-il déclarer la naissance d'un enfant ?"
+  },
+  {
+    "id": "cr-183",
+    "order": 183,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quelle est l'une des conditions pour passer l'examen du permis de conduire ?"
+  },
+  {
+    "id": "cr-184",
+    "order": 184,
+    "theme": "Vivre dans la société française",
+    "prompt": "Un bail locatif est valide s'il est :"
+  },
+  {
+    "id": "cr-185",
+    "order": 185,
+    "theme": "Vivre dans la société française",
+    "prompt": "Où peut-on déposer un lave-vaisselle cassé ?"
+  },
+  {
+    "id": "cr-186",
+    "order": 186,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quel numéro d'urgence permet d'appeler la police ?"
+  },
+  {
+    "id": "cr-187",
+    "order": 187,
+    "theme": "Vivre dans la société française",
+    "prompt": "Concernant l'accès aux soins, quelle proposition est correcte ?"
+  },
+  {
+    "id": "cr-188",
+    "order": 188,
+    "theme": "Vivre dans la société française",
+    "prompt": "À qui est accessible la contraception ?"
+  },
+  {
+    "id": "cr-189",
+    "order": 189,
+    "theme": "Vivre dans la société française",
+    "prompt": "Qu’est-ce que le principe de confidentialité dans le domaine de la santé ?"
+  },
+  {
+    "id": "cr-190",
+    "order": 190,
+    "theme": "Vivre dans la société française",
+    "prompt": "L'inscription à l'Assurance maladie est :"
+  },
+  {
+    "id": "cr-191",
+    "order": 191,
+    "theme": "Vivre dans la société française",
+    "prompt": "Qui peut demander un congé parental d'éducation ?"
+  },
+  {
+    "id": "cr-192",
+    "order": 192,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quelles sont les affaires traitées par le conseil de prud'hommes ?"
+  },
+  {
+    "id": "cr-193",
+    "order": 193,
+    "theme": "Vivre dans la société française",
+    "prompt": "Travailler sans être déclaré est :"
+  },
+  {
+    "id": "cr-194",
+    "order": 194,
+    "theme": "Vivre dans la société française",
+    "prompt": "Lorsqu'un employeur veut qu'un salarié travaille plus longtemps que la durée prévue dans le contrat de travail :"
+  },
+  {
+    "id": "cr-195",
+    "order": 195,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quelle est la mission de France Travail ?"
+  },
+  {
+    "id": "cr-196",
+    "order": 196,
+    "theme": "Vivre dans la société française",
+    "prompt": "Dans une entreprise, le droit syndical permet :"
+  },
+  {
+    "id": "cr-197",
+    "order": 197,
+    "theme": "Vivre dans la société française",
+    "prompt": "Dans une entreprise, le droit de grève autorise :"
+  },
+  {
+    "id": "cr-198",
+    "order": 198,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quelles sont les conditions pour toucher les allocations chômage ?"
+  },
+  {
+    "id": "cr-199",
+    "order": 199,
+    "theme": "Vivre dans la société française",
+    "prompt": "Qu'est-ce que l'école maternelle ?"
+  },
+  {
+    "id": "cr-200",
+    "order": 200,
+    "theme": "Vivre dans la société française",
+    "prompt": "Comment s'appelle le diplôme passé par les élèves à la fin du collège ?"
+  },
+  {
+    "id": "cr-201",
+    "order": 201,
+    "theme": "Vivre dans la société française",
+    "prompt": "Les parents d'élève ont le droit de :"
+  },
+  {
+    "id": "cr-202",
+    "order": 202,
+    "theme": "Vivre dans la société française",
+    "prompt": "Qui peut manger à la cantine scolaire ?"
+  },
+  {
+    "id": "cr-203",
+    "order": 203,
+    "theme": "Vivre dans la société française",
+    "prompt": "À quel âge commence l'instruction obligatoire des enfants ?"
+  },
+  {
+    "id": "cr-204",
+    "order": 204,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quel est l'âge de la majorité ?"
+  },
+  {
+    "id": "cr-205",
+    "order": 205,
+    "theme": "Vivre dans la société française",
+    "prompt": "À l'école, il est interdit aux parents de :"
+  },
+  {
+    "id": "cr-206",
+    "order": 206,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quel motif d'absence est accepté par l'école ?"
+  },
+  {
+    "id": "cr-207",
+    "order": 207,
+    "theme": "Vivre dans la société française",
+    "prompt": "Des parents ne respectent pas l'obligation d'instruction pour leurs enfants. Quelle sanction maximale risquent-ils ?"
+  },
+  {
+    "id": "cr-208",
+    "order": 208,
+    "theme": "Vivre dans la société française",
+    "prompt": "Quand ont lieu les vacances scolaires de Noël ?"
+  },
+  {
+    "id": "cr-209",
+    "order": 209,
+    "theme": "Vivre dans la société française",
+    "prompt": "À l'école, un enfant en situation de handicap :"
+  }
+]
