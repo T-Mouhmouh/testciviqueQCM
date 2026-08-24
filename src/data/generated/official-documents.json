@@ -12,6 +12,12 @@
     "url": "https://formation-civique.interieur.gouv.fr/examen-civique/liste-officielle-des-questions-de-connaissance-cr/"
   },
   {
+    "id": "question-list-csp",
+    "title": "Liste officielle des questions de connaissance - CSP",
+    "theme": "Examen civique",
+    "url": "https://formation-civique.interieur.gouv.fr/examen-civique/liste-officielle-des-questions-de-connaissance-csp/"
+  },
+  {
     "id": "theme-principles",
     "title": "Principes et valeurs de la République",
     "theme": "Principes et valeurs de la République",
@@ -64,6 +70,54 @@
     "title": "Qui parle français dans le monde",
     "theme": "Histoire, géographie et culture",
     "url": "https://observatoire.francophonie.org/qui-parle-francais-dans-le-monde/"
+  },
+  {
+    "id": "service-public-exam",
+    "title": "Service-Public - Un nouvel examen civique pour les étrangers souhaitant s'installer en France",
+    "theme": "Examen civique",
+    "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18713"
+  },
+  {
+    "id": "service-public-elections",
+    "title": "Service-Public - Élections",
+    "theme": "Système institutionnel et politique",
+    "url": "https://www.service-public.fr/particuliers/vosdroits/N47"
+  },
+  {
+    "id": "service-public-eu-vote",
+    "title": "Service-Public - Droit de vote d'un citoyen européen en France",
+    "theme": "Système institutionnel et politique",
+    "url": "https://www.service-public.fr/particuliers/vosdroits/F1937"
+  },
+  {
+    "id": "education-school-principles",
+    "title": "Ministère de l'Éducation nationale - Les grands principes du système éducatif",
+    "theme": "Vivre dans la société française",
+    "url": "https://www.education.gouv.fr/les-grands-principes-du-systeme-educatif-9842"
+  },
+  {
+    "id": "education-ecole-maternelle",
+    "title": "Ministère de l'Éducation nationale - L'école maternelle en pratique",
+    "theme": "Vivre dans la société française",
+    "url": "https://www.education.gouv.fr/l-ecole-maternelle-en-pratique-1010"
+  },
+  {
+    "id": "ameli-puma",
+    "title": "Ameli - La protection universelle maladie",
+    "theme": "Vivre dans la société française",
+    "url": "https://www.ameli.fr/assure/droits-demarches/principes/protection-universelle-maladie"
+  },
+  {
+    "id": "vie-publique-constitution",
+    "title": "Vie Publique - Qu'est-ce qu'une Constitution ?",
+    "theme": "Système institutionnel et politique",
+    "url": "https://www.vie-publique.fr/fiches/19545-quest-ce-quune-constitution-definition-dune-constitution"
+  },
+  {
+    "id": "vie-publique-revisions-constitution",
+    "title": "Vie Publique - Les révisions de la Constitution sous la Ve République",
+    "theme": "Système institutionnel et politique",
+    "url": "https://www.vie-publique.fr/dossier/267859-les-revisions-de-la-constitution-sous-la-ve-republique"
   },
   {
     "id": "doc-001",
@@ -637,7 +691,7 @@
     "title": "Patrimoine français : la langue française dans le monde",
     "theme": "Histoire, géographie et culture",
     "url": "https://formation-civique.interieur.gouv.fr/fiches-par-thematiques/histoire-geographie-et-culture/culture/patrimoine-francais-la-langue-francaise-dans-le-monde/",
-    "lastmod": "2025-11-03"
+    "lastmod": "2026-07-07"
   },
   {
     "id": "doc-087",
@@ -1835,12 +1889,5 @@
     "theme": "Autres ressources officielles",
     "url": "https://formation-civique.interieur.gouv.fr/examen-civique/",
     "lastmod": "2025-11-06"
-  },
-  {
-    "id": "doc-260",
-    "title": "Liste officielle des questions de connaissance - CSP",
-    "theme": "Autres ressources officielles",
-    "url": "https://formation-civique.interieur.gouv.fr/examen-civique/liste-officielle-des-questions-de-connaissance-csp/",
-    "lastmod": "2025-12-12"
   }
 ]

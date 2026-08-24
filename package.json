@@ -6,10 +6,25 @@
   "scripts": {
     "generate:data": "node scripts/fetch-official-data.mjs",
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "generate:web-pages": "tsx scripts/generate-question-pages.ts",
+    "build": "npm run generate:web-pages && tsc && vite build",
+    "build:android:debug": "tsc && vite build --mode development",
+    "build:android:release": "tsc && vite build --mode production",
+    "preview": "vite preview",
+    "mobile:build": "npm run build:android:debug && npx cap sync",
+    "ios:add": "npx cap add ios",
+    "ios:sync": "npm run build && npx cap sync ios",
+    "ios:open": "npx cap open ios",
+    "android:add": "npx cap add android",
+    "android:sync": "npm run android:sync:debug",
+    "android:sync:debug": "npm run build:android:debug && npx cap sync android",
+    "android:sync:release": "npm run build:android:release && npx cap sync android",
+    "android:open": "npx cap open android",
+    "android:build:debug": "npm run android:sync:debug && cd android && gradlew.bat assembleDebug",
+    "android:build:release": "npm run android:sync:release && cd android && gradlew.bat bundleRelease"
   },
   "devDependencies": {
+    "@capacitor/cli": "^8.4.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react-swc": "^4.3.0",
@@ -20,8 +35,15 @@
     "vite": "^8.0.1"
   },
   "dependencies": {
+    "@capacitor-community/admob": "^8.0.0",
+    "@capacitor/android": "^8.4.2",
+    "@capacitor/core": "^8.4.2",
+    "@capacitor/ios": "^8.4.2",
     "jspdf": "^4.2.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
+  },
+  "overrides": {
+    "esbuild": "^0.28.1"
   }
 }

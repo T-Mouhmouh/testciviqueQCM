@@ -17,6 +17,7 @@ export type ThemeKey =
 
 export type Difficulty = 'essentiel' | 'avance';
 export type SessionMode = 'practice' | 'exam';
+export type ExamTrackKey = 'residence' | 'pluriannuelle' | 'naturalisation';
 
 export type OfficialQuestion = {
   id: string;
@@ -68,6 +69,7 @@ export type QuizAttempt = {
   selectedIndex: number | null;
   answeredAt: string;
   mode: SessionMode;
+  track?: ExamTrackKey;
 };
 
 export type ExamHistoryEntry = {
@@ -80,6 +82,7 @@ export type ExamHistoryEntry = {
   passed: boolean;
   unansweredCount: number;
   elapsedSeconds: number;
+  track?: ExamTrackKey;
 };
 
 export type ProgressStats = {
@@ -93,6 +96,7 @@ export type QuizSession = {
   answers: Record<string, number>;
   note?: string;
   mode: SessionMode;
+  track?: ExamTrackKey;
   startedAt: string;
   durationSeconds?: number;
   finishedAt?: string;

@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+*.jks
+*.keystore
+android/key.properties
+android/upload-keystore.jks
+android/upload-keystore.keystore
 
 # Editor directories and files
 .vscode/*

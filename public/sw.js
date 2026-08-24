@@ -1,11 +1,11 @@
-const CACHE_NAME = 'prepa-carte-resident-v4';
+const CACHE_NAME = 'test-civique-qcm-v7';
 const APP_SHELL = [
   '/',
   '/index.html',
+  '/app.html',
   '/manifest.webmanifest',
-  '/favicon.svg',
-  '/pwa-192.svg',
-  '/pwa-512.svg',
+  '/app-icon-192.png',
+  '/app-icon-512.png',
 ];
 
 self.addEventListener('install', (event) => {
@@ -37,14 +37,15 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (request.mode === 'navigate') {
+    const pageKey = url.pathname === '/' ? '/index.html' : url.pathname;
     event.respondWith(
       fetch(request)
         .then((response) => {
           const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => cache.put('/index.html', clone));
+          caches.open(CACHE_NAME).then((cache) => cache.put(pageKey, clone));
           return response;
         })
-        .catch(() => caches.match('/index.html')),
+        .catch(() => caches.match(pageKey).then((cached) => cached || caches.match('/index.html'))),
     );
     return;
   }

@@ -8,6 +8,8 @@ const GENERATED_DIR = path.join(ROOT_DIR, 'src', 'data', 'generated');
 
 const CR_QUESTION_URL =
   'https://formation-civique.interieur.gouv.fr/examen-civique/liste-officielle-des-questions-de-connaissance-cr/';
+const CSP_QUESTION_URL =
+  'https://formation-civique.interieur.gouv.fr/examen-civique/liste-officielle-des-questions-de-connaissance-csp/';
 const SITEMAP_URL = 'https://formation-civique.interieur.gouv.fr/sitemap.xml';
 const OFFICIAL_HOST = 'https://formation-civique.interieur.gouv.fr';
 
@@ -31,6 +33,12 @@ const GLOBAL_SOURCES = [
     title: 'Liste officielle des questions de connaissance - CR',
     theme: 'Examen civique',
     url: CR_QUESTION_URL,
+  },
+  {
+    id: 'question-list-csp',
+    title: 'Liste officielle des questions de connaissance - CSP',
+    theme: 'Examen civique',
+    url: CSP_QUESTION_URL,
   },
   {
     id: 'theme-principles',
@@ -85,6 +93,54 @@ const GLOBAL_SOURCES = [
     title: 'Qui parle français dans le monde',
     theme: 'Histoire, géographie et culture',
     url: 'https://observatoire.francophonie.org/qui-parle-francais-dans-le-monde/',
+  },
+  {
+    id: 'service-public-exam',
+    title: "Service-Public - Un nouvel examen civique pour les étrangers souhaitant s'installer en France",
+    theme: 'Examen civique',
+    url: 'https://www.service-public.gouv.fr/particuliers/actualites/A18713',
+  },
+  {
+    id: 'service-public-elections',
+    title: 'Service-Public - Élections',
+    theme: 'Système institutionnel et politique',
+    url: 'https://www.service-public.fr/particuliers/vosdroits/N47',
+  },
+  {
+    id: 'service-public-eu-vote',
+    title: "Service-Public - Droit de vote d'un citoyen européen en France",
+    theme: 'Système institutionnel et politique',
+    url: 'https://www.service-public.fr/particuliers/vosdroits/F1937',
+  },
+  {
+    id: 'education-school-principles',
+    title: "Ministère de l'Éducation nationale - Les grands principes du système éducatif",
+    theme: 'Vivre dans la société française',
+    url: 'https://www.education.gouv.fr/les-grands-principes-du-systeme-educatif-9842',
+  },
+  {
+    id: 'education-ecole-maternelle',
+    title: "Ministère de l'Éducation nationale - L'école maternelle en pratique",
+    theme: 'Vivre dans la société française',
+    url: 'https://www.education.gouv.fr/l-ecole-maternelle-en-pratique-1010',
+  },
+  {
+    id: 'ameli-puma',
+    title: 'Ameli - La protection universelle maladie',
+    theme: 'Vivre dans la société française',
+    url: 'https://www.ameli.fr/assure/droits-demarches/principes/protection-universelle-maladie',
+  },
+  {
+    id: 'vie-publique-constitution',
+    title: "Vie Publique - Qu'est-ce qu'une Constitution ?",
+    theme: 'Système institutionnel et politique',
+    url: 'https://www.vie-publique.fr/fiches/19545-quest-ce-quune-constitution-definition-dune-constitution',
+  },
+  {
+    id: 'vie-publique-revisions-constitution',
+    title: 'Vie Publique - Les révisions de la Constitution sous la Ve République',
+    theme: 'Système institutionnel et politique',
+    url: 'https://www.vie-publique.fr/dossier/267859-les-revisions-de-la-constitution-sous-la-ve-republique',
   },
 ];
 
@@ -150,8 +206,8 @@ const chunk = (items, size) => {
   return result;
 };
 
-const buildOfficialQuestionBank = async () => {
-  const html = await fetchText(CR_QUESTION_URL);
+const buildOfficialQuestionBank = async (questionUrl, idPrefix) => {
+  const html = await fetchText(questionUrl);
   const $ = load(html);
   const items = [];
   let order = 0;
@@ -174,7 +230,7 @@ const buildOfficialQuestionBank = async () => {
         }
         order += 1;
         items.push({
-          id: `cr-${String(order).padStart(3, '0')}`,
+          id: `${idPrefix}-${String(order).padStart(3, '0')}`,
           order,
           theme,
           prompt,
@@ -250,14 +306,20 @@ const buildOfficialDocumentLibrary = async () => {
 
 await mkdir(GENERATED_DIR, { recursive: true });
 
-const [questions, documents] = await Promise.all([
-  buildOfficialQuestionBank(),
+const [crQuestions, cspQuestions, documents] = await Promise.all([
+  buildOfficialQuestionBank(CR_QUESTION_URL, 'cr'),
+  buildOfficialQuestionBank(CSP_QUESTION_URL, 'csp'),
   buildOfficialDocumentLibrary(),
 ]);
 
 await writeFile(
   path.join(GENERATED_DIR, 'official-question-bank.json'),
-  `${JSON.stringify(questions, null, 2)}\n`,
+  `${JSON.stringify(crQuestions, null, 2)}\n`,
+);
+
+await writeFile(
+  path.join(GENERATED_DIR, 'csp-question-bank.json'),
+  `${JSON.stringify(cspQuestions, null, 2)}\n`,
 );
 
 await writeFile(
@@ -265,5 +327,6 @@ await writeFile(
   `${JSON.stringify(documents, null, 2)}\n`,
 );
 
-console.log(`Generated ${questions.length} official CR questions.`);
+console.log(`Generated ${crQuestions.length} official CR questions.`);
+console.log(`Generated ${cspQuestions.length} official CSP questions.`);
 console.log(`Generated ${documents.length} official official-source entries.`);

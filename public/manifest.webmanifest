@@ -1,24 +1,24 @@
 {
-  "name": "Prépa Carte de Résident",
-  "short_name": "Prépa Résident",
-  "description": "Révision du test civique français pour la carte de résident 10 ans, avec quiz, examen blanc, audio et banque officielle.",
-  "start_url": "/",
+  "name": "Test Civique QCM",
+  "short_name": "Test Civique QCM",
+  "description": "Entrainement QCM au test civique francais pour carte de sejour, residence et naturalisation.",
+  "start_url": "/app.html",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#f6f1e9",
-  "theme_color": "#153a74",
+  "background_color": "#10141b",
+  "theme_color": "#10141b",
   "lang": "fr",
   "icons": [
     {
-      "src": "/pwa-192.svg",
+      "src": "/app-icon-192.png",
       "sizes": "192x192",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/pwa-512.svg",
+      "src": "/app-icon-512.png",
       "sizes": "512x512",
-      "type": "image/svg+xml",
+      "type": "image/png",
       "purpose": "any maskable"
     }
   ]

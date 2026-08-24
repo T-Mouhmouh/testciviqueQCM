@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import WebHome from './WebHome';
 import './styles.css';
 
 if (import.meta.env.PROD && 'serviceWorker' in navigator) {
@@ -10,4 +11,11 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
   });
 }
 
-ReactDOM.createRoot(document.getElementById('app')!).render(<App />);
+const isNativeRuntime =
+  window.location.protocol === 'capacitor:' ||
+  Boolean((window as Window & { Capacitor?: { isNativePlatform?: () => boolean } }).Capacitor?.isNativePlatform?.());
+const isAppPage = window.location.pathname.endsWith('/app.html');
+
+ReactDOM.createRoot(document.getElementById('app')!).render(
+  isNativeRuntime || isAppPage ? <App /> : <WebHome />,
+);
