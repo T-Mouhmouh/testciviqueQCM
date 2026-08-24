@@ -6,8 +6,7 @@
   "scripts": {
     "generate:data": "node scripts/fetch-official-data.mjs",
     "dev": "vite",
-    "generate:web-pages": "tsx scripts/generate-question-pages.ts",
-    "build": "npm run generate:web-pages && tsc && vite build",
+    "build": "tsc && vite build",
     "build:android:debug": "tsc && vite build --mode development",
     "build:android:release": "tsc && vite build --mode production",
     "preview": "vite preview",
