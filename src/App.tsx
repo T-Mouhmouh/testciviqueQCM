@@ -665,8 +665,8 @@ function TrackPortal({
       <section className="track-portal-copy">
         <img
           className="portal-hero-image"
-          src="/web-hero-community.png"
-          alt="Un groupe d'adultes révise ensemble le test civique"
+          src="/hero-candidats-test-civique.png"
+          alt="Des candidats adultes préparent ensemble le test civique dans une bibliothèque"
         />
         <span className="portal-image-shade" aria-hidden="true" />
         <div className="portal-tricolor" aria-hidden="true">
@@ -675,7 +675,7 @@ function TrackPortal({
           <span />
         </div>
         <span className="eyebrow">Objectif France</span>
-        <h1 id="track-portal-title">Prépare ton test civique avec confiance.</h1>
+        <h1 id="track-portal-title">Réussis ton test civique avec confiance.</h1>
         <p>
           Choisis ton objectif, lance une simulation réaliste et avance étape par étape.
           L'idée est simple : arriver prêt, calme et sûr de toi le jour du test.

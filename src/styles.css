@@ -18,6 +18,131 @@
   --shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
 }
 
+/* Final landing composition: photographic, compact and focused on the three paths. */
+.web-runtime.active-portal .track-portal {
+  width: min(1240px, 100%);
+  margin-inline: auto;
+}
+
+.web-runtime.active-portal .track-portal-copy {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(530px, 65vh, 680px);
+  padding: clamp(28px, 5vw, 70px);
+  border: 1px solid rgba(137, 194, 255, 0.24);
+  border-radius: 32px;
+  background: #06172a;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.38);
+}
+
+.web-runtime.active-portal .portal-hero-image,
+.web-runtime.active-portal .portal-image-shade {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.web-runtime.active-portal .portal-hero-image {
+  z-index: -2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.web-runtime.active-portal .portal-image-shade {
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(3, 15, 31, 0.98) 0%, rgba(3, 15, 31, 0.9) 32%, rgba(3, 15, 31, 0.34) 68%, rgba(3, 15, 31, 0.12) 100%),
+    linear-gradient(0deg, rgba(3, 15, 31, 0.88), transparent 55%);
+}
+
+.web-runtime.active-portal .track-portal-copy > :not(.portal-hero-image):not(.portal-image-shade) {
+  position: relative;
+  z-index: 1;
+}
+
+.web-runtime.active-portal .track-portal-copy h1 {
+  max-width: 8.5ch;
+  font-size: clamp(3.6rem, 6vw, 6.3rem);
+  line-height: 0.87;
+  text-wrap: balance;
+  text-shadow: 0 10px 34px rgba(0, 0, 0, 0.44);
+}
+
+.web-runtime.active-portal .track-portal-copy > p:not(.portal-independence-note),
+.web-runtime.active-portal .portal-free-badge,
+.web-runtime.active-portal .portal-mission-strip,
+.web-runtime.active-portal .portal-encouragement,
+.web-runtime.active-portal .portal-independence-note {
+  max-width: 540px;
+}
+
+.web-runtime.active-portal .track-portal-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.web-runtime.active-portal .track-portal-grid .track-card {
+  min-height: 330px;
+  padding: 28px;
+  border-radius: 26px;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.web-runtime.active-portal .track-portal-grid .track-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(66, 217, 255, 0.45);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.34);
+}
+
+.web-runtime.active-portal .track-portal-grid .track-card strong {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+@media (min-width: 1121px) {
+  .web-runtime.active-portal .track-portal {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    min-height: auto;
+    padding-top: 72px;
+  }
+}
+
+@media (max-width: 760px) {
+  .web-runtime.active-portal .track-portal-copy {
+    min-height: 650px;
+    padding: 28px 22px;
+    border-radius: 24px;
+    align-content: end;
+  }
+
+  .web-runtime.active-portal .portal-hero-image {
+    object-position: 62% center;
+  }
+
+  .web-runtime.active-portal .portal-image-shade {
+    background:
+      linear-gradient(0deg, rgba(3, 15, 31, 0.99) 0%, rgba(3, 15, 31, 0.88) 47%, rgba(3, 15, 31, 0.18) 100%),
+      linear-gradient(90deg, rgba(3, 15, 31, 0.48), transparent);
+  }
+
+  .web-runtime.active-portal .track-portal-copy h1 {
+    max-width: 10ch;
+    font-size: clamp(3.2rem, 17vw, 4.7rem);
+  }
+
+  .web-runtime.active-portal .portal-free-badge span,
+  .web-runtime.active-portal .portal-independence-note {
+    display: none;
+  }
+
+  .web-runtime.active-portal .track-portal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Editorial web homepage and policy-safe manual advertising. */
 .portal-knowledge,
 .editorial-ad {
@@ -259,6 +384,126 @@
   box-shadow:
     0 1px 0 rgba(3, 10, 20, 0.24),
     0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Landing-photo overrides must remain last in the cascade. */
+.web-runtime.active-portal .track-portal {
+  width: min(1240px, 100%);
+  max-width: 1240px;
+  margin-inline: auto;
+}
+
+.web-runtime.active-portal .track-portal-copy {
+  position: relative;
+  isolation: isolate;
+  min-height: clamp(530px, 65vh, 680px);
+  padding: clamp(28px, 5vw, 70px);
+  border: 1px solid rgba(137, 194, 255, 0.24);
+  border-radius: 32px;
+  background: #06172a;
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.38);
+}
+
+.web-runtime.active-portal .portal-hero-image,
+.web-runtime.active-portal .portal-image-shade {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.web-runtime.active-portal .portal-hero-image {
+  z-index: -2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.web-runtime.active-portal .portal-image-shade {
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(3, 15, 31, 0.98) 0%, rgba(3, 15, 31, 0.9) 32%, rgba(3, 15, 31, 0.34) 68%, rgba(3, 15, 31, 0.12) 100%),
+    linear-gradient(0deg, rgba(3, 15, 31, 0.88), transparent 55%);
+}
+
+.web-runtime.active-portal .track-portal-copy > :not(.portal-hero-image):not(.portal-image-shade) {
+  position: relative;
+  z-index: 1;
+}
+
+.web-runtime.active-portal .track-portal-copy h1 {
+  max-width: 8.5ch;
+  font-size: clamp(3.6rem, 6vw, 6.3rem);
+  line-height: 0.87;
+  text-wrap: balance;
+  text-shadow: 0 10px 34px rgba(0, 0, 0, 0.44);
+}
+
+.web-runtime.active-portal .track-portal-copy > p:not(.portal-independence-note),
+.web-runtime.active-portal .portal-free-badge,
+.web-runtime.active-portal .portal-mission-strip,
+.web-runtime.active-portal .portal-encouragement,
+.web-runtime.active-portal .portal-independence-note {
+  max-width: 540px;
+}
+
+.web-runtime.active-portal .track-portal-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.web-runtime.active-portal .track-portal-grid .track-card {
+  min-height: 330px;
+  padding: 28px;
+  border-radius: 26px;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.web-runtime.active-portal .track-portal-grid .track-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(66, 217, 255, 0.45);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.34);
+}
+
+.web-runtime.active-portal .track-portal-grid .track-card strong {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+@media (min-width: 1121px) {
+  .web-runtime.active-portal .track-portal {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    min-height: auto;
+    padding-top: 72px;
+  }
+}
+
+@media (max-width: 760px) {
+  .web-runtime.active-portal .track-portal-copy {
+    min-height: 650px;
+    padding: 28px 22px;
+    border-radius: 24px;
+    align-content: end;
+  }
+
+  .web-runtime.active-portal .portal-hero-image { object-position: 62% center; }
+
+  .web-runtime.active-portal .portal-image-shade {
+    background:
+      linear-gradient(0deg, rgba(3, 15, 31, 0.99) 0%, rgba(3, 15, 31, 0.88) 47%, rgba(3, 15, 31, 0.18) 100%),
+      linear-gradient(90deg, rgba(3, 15, 31, 0.48), transparent);
+  }
+
+  .web-runtime.active-portal .track-portal-copy h1 {
+    max-width: 10ch;
+    font-size: clamp(3.2rem, 17vw, 4.7rem);
+  }
+
+  .web-runtime.active-portal .portal-free-badge span,
+  .web-runtime.active-portal .portal-independence-note { display: none; }
+
+  .web-runtime.active-portal .track-portal-grid { grid-template-columns: 1fr; }
 }
 
 @media (min-width: 1121px) {
