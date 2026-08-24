@@ -7661,6 +7661,58 @@ a {
   }
 }
 
+/* Definitive portal layout, placed after every legacy responsive rule. */
+.web-runtime.active-portal .track-portal {
+  grid-template-columns: minmax(0, 1fr) !important;
+  width: min(1320px, calc(100% - 40px));
+  max-width: 1320px;
+  min-height: auto;
+  margin-inline: auto;
+  padding-top: 60px;
+  gap: 18px;
+}
+
+.web-runtime.active-portal .track-portal-copy {
+  min-height: 590px;
+  align-content: center;
+  padding: clamp(38px, 5vw, 72px);
+  border-radius: 32px;
+}
+
+.web-runtime.active-portal .track-portal-copy h1 {
+  max-width: 8.5ch;
+  font-size: clamp(3.8rem, 5.4vw, 6rem);
+  line-height: 0.9;
+}
+
+.web-runtime.active-portal .track-portal-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-content: stretch;
+  gap: 16px;
+}
+
+.web-runtime.active-portal .track-portal-grid .track-card {
+  min-height: 330px;
+}
+
+@media (max-width: 760px) {
+  .web-runtime.active-portal .track-portal {
+    width: min(100% - 20px, 1320px);
+    padding-top: 24px;
+  }
+
+  .web-runtime.active-portal .track-portal-copy {
+    min-height: 650px;
+    align-content: end;
+    padding: 28px 22px;
+    border-radius: 24px;
+  }
+
+  .web-runtime.active-portal .track-portal-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
 /* Keep the raised treatment after the legacy component rules above. */
 .track-card em {
   align-items: center;
