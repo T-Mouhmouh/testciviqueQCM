@@ -787,7 +787,6 @@ function TrackPortal({
             <p>Relier les libertes individuelles au respect de la loi, des autres personnes et de l'interet general.</p>
           </article>
         </div>
-        <a className="portal-guide-link" href="/guides.html">Lire le guide complet de preparation</a>
       </section>
 
     </main>
@@ -1043,7 +1042,6 @@ function WebSiteFooter() {
         <span>Entraînement indépendant pour le séjour, la résidence et la naturalisation.</span>
       </div>
       <nav aria-label="Informations du site">
-        <a href="/guides.html">Guides pratiques</a>
         <a href={ABOUT_PAGE_URL}>À propos</a>
         <a href={PRIVACY_POLICY_URL} target="_blank" rel="noreferrer">
           Confidentialité
@@ -1150,13 +1148,6 @@ function WebTrainingHeader() {
   return (
     <header className="training-site-header">
       <a className="training-site-logo" href="/"><span>TC</span><strong>Test Civique QCM</strong></a>
-      <nav aria-label="Navigation du site">
-        <a href="/examen-civique.html">L'examen</a>
-        <a href="/guides.html">Méthode</a>
-        <a href="/valeurs-republique.html">Valeurs</a>
-        <a href="/institutions-francaises.html">Institutions</a>
-      </nav>
-      <a className="training-site-home" href="/">Accueil du site</a>
     </header>
   );
 }
