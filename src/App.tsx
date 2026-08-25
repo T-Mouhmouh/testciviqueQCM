@@ -3127,6 +3127,36 @@ export default function App() {
                   })}
                 </div>
 
+                <div className="session-nav">
+                  <button
+                    className="secondary-button"
+                    onClick={() => moveToQuestion(currentIndex - 1)}
+                    disabled={currentIndex === 0}
+                  >
+                    <ActionIcon name="previous" tone="blue" />
+                    Question précédente
+                  </button>
+                  {!isLastSessionQuestion && (
+                    <button
+                      className="secondary-button"
+                      onClick={() => moveToQuestion(currentIndex + 1)}
+                    >
+                      <ActionIcon name="next" tone="cyan" />
+                      Question suivante
+                    </button>
+                  )}
+                  {isLastSessionQuestion && (
+                    <button
+                      className="primary-button result-submit-button"
+                      onClick={() => void submitSessionFromLastQuestion()}
+                      disabled={sessionFinished || completionAdLoading}
+                    >
+                      <ActionIcon name="results" tone="green" />
+                      {completionAdLoading ? 'Ouverture des résultats...' : 'Voir mes résultats'}
+                    </button>
+                  )}
+                </div>
+
                 {!isNativeRuntime() && (
                   <div className="quiz-editorial-intro quiz-editorial-intro-after-answers">
                     <span>Exercice corrigé</span>
@@ -3185,35 +3215,6 @@ export default function App() {
                     </div>
                   )}
 
-                <div className="session-nav">
-                  <button
-                    className="secondary-button"
-                    onClick={() => moveToQuestion(currentIndex - 1)}
-                    disabled={currentIndex === 0}
-                  >
-                    <ActionIcon name="previous" tone="blue" />
-                    Question précédente
-                  </button>
-                  {!isLastSessionQuestion && (
-                    <button
-                      className="secondary-button"
-                      onClick={() => moveToQuestion(currentIndex + 1)}
-                    >
-                      <ActionIcon name="next" tone="cyan" />
-                      Question suivante
-                    </button>
-                  )}
-                  {isLastSessionQuestion && (
-                    <button
-                      className="primary-button result-submit-button"
-                      onClick={() => void submitSessionFromLastQuestion()}
-                      disabled={sessionFinished || completionAdLoading}
-                    >
-                      <ActionIcon name="results" tone="green" />
-                      {completionAdLoading ? 'Ouverture des résultats...' : 'Voir mes résultats'}
-                    </button>
-                  )}
-                </div>
                 <QuizInlineAdSlot mobileAdsReady={mobileAdsReady} />
               </section>
 
