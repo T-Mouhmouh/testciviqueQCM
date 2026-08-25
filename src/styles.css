@@ -7750,6 +7750,20 @@ a {
   width: 23px;
 }
 
+@media (max-width: 760px) {
+  .milestone-card .milestone-visual {
+    display: none;
+  }
+
+  .milestone-card .milestone-resume-zone {
+    padding-top: 0;
+  }
+
+  .milestone-card .milestone-continue-button {
+    min-height: 46px;
+  }
+}
+
 
 .primary-button,
 .secondary-button,

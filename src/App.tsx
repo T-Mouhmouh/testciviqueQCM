@@ -3277,6 +3277,26 @@ export default function App() {
                       <span>{milestoneCorrectCount} correcte(s)</span>
                       <span>{milestoneRemainingCount} restante(s)</span>
                     </div>
+                    <div className="milestone-resume-zone">
+                      <button
+                        className="primary-button wide milestone-continue-button"
+                        onClick={continueAfterMilestonePause}
+                        disabled={milestoneAdLoading}
+                      >
+                        {milestoneAdLoading
+                          ? 'Préparation de la suite...'
+                          : `Continuer vers la question ${activeMilestonePause.nextIndex + 1}`}
+                      </button>
+                      {!isNativeRuntime() && session?.mode === 'practice' && (
+                        <WebAdSenseSlot placement="quizBreak" className="web-ad-pause" />
+                      )}
+                      {mobileAdsReady && (
+                        <p className="muted-line">
+                          Sur Android, une courte pub peut s&apos;afficher avant la reprise.
+                          Le chrono de l&apos;examen ne te pénalise pas pendant cette pause.
+                        </p>
+                      )}
+                    </div>
                     <div className="milestone-learning-summary">
                       <strong>Conseil pour le prochain bloc</strong>
                       <span>{milestoneTip}</span>
@@ -3299,26 +3319,6 @@ export default function App() {
                         <strong>{milestoneAccuracy}%</strong>
                         <span>de réussite sur les réponses données dans les blocs terminés.</span>
                       </div>
-                    </div>
-                    <div className="milestone-resume-zone">
-                      {!isNativeRuntime() && session?.mode === 'practice' && (
-                        <WebAdSenseSlot placement="quizBreak" className="web-ad-pause" />
-                      )}
-                      <button
-                        className="primary-button wide"
-                        onClick={continueAfterMilestonePause}
-                        disabled={milestoneAdLoading}
-                      >
-                        {milestoneAdLoading
-                          ? 'Préparation de la suite...'
-                          : `Continuer vers la question ${activeMilestonePause.nextIndex + 1}`}
-                      </button>
-                      {mobileAdsReady && (
-                        <p className="muted-line">
-                          Sur Android, une courte pub peut s&apos;afficher avant la reprise.
-                          Le chrono de l&apos;examen ne te pénalise pas pendant cette pause.
-                        </p>
-                      )}
                     </div>
                   </div>
                 </section>
