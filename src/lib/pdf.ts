@@ -113,5 +113,17 @@ export async function exportRevisionPdf({ progress, questions }: ExportPdfInput)
     addTextBlock(`Memo : ${pack.memoryTip}`);
   });
 
-  document.save('fiche-revision-carte-resident.pdf');
+  const fileName = 'fiche-revision-carte-resident.pdf';
+  const blob = document.output('blob');
+  const downloadUrl = URL.createObjectURL(blob);
+  const downloadLink = window.document.createElement('a');
+  downloadLink.href = downloadUrl;
+  downloadLink.download = fileName;
+  downloadLink.rel = 'noopener';
+  downloadLink.style.display = 'none';
+  window.document.body.appendChild(downloadLink);
+  downloadLink.click();
+  downloadLink.remove();
+
+  window.setTimeout(() => URL.revokeObjectURL(downloadUrl), 60_000);
 }

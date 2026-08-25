@@ -1587,8 +1587,14 @@ export default function App() {
     });
   }
 
-  function launchQuestionPack(questions: PracticeQuestion[], note: string) {
-    const selectedQuestions = questions.slice(0, 20).map(randomizeQuestionOptions);
+  function launchQuestionPack(
+    questions: PracticeQuestion[],
+    note: string,
+    maximumCount = 20,
+  ) {
+    const selectedQuestions = questions
+      .slice(0, maximumCount)
+      .map(randomizeQuestionOptions);
     if (!selectedQuestions.length) {
       return;
     }
@@ -1619,6 +1625,18 @@ export default function App() {
       setNow(Date.now());
       setActiveTab('quiz');
     });
+  }
+
+  function reviewCurrentSessionErrors() {
+    if (!incorrectSessionQuestions.length) {
+      return;
+    }
+
+    launchQuestionPack(
+      incorrectSessionQuestions,
+      `Révision ciblée : ${incorrectSessionQuestions.length} erreur(s) de la session terminée.`,
+      incorrectSessionQuestions.length,
+    );
   }
 
   function launchSingleQuestion(question: PracticeQuestion) {
@@ -3354,7 +3372,10 @@ export default function App() {
                   </button>
                   <button
                     className="secondary-button wide"
-                    onClick={() => launchPracticeQuiz({ onlyIncorrect: true })}
+                    onClick={sessionFinished
+                      ? reviewCurrentSessionErrors
+                      : () => launchPracticeQuiz({ onlyIncorrect: true })}
+                    disabled={sessionFinished && !incorrectSessionQuestions.length}
                   >
                     Rejouer mes erreurs
                   </button>
@@ -3426,7 +3447,8 @@ export default function App() {
                     </button>
                     <button
                       className="secondary-button"
-                      onClick={() => launchPracticeQuiz({ onlyIncorrect: true })}
+                      onClick={reviewCurrentSessionErrors}
+                      disabled={!incorrectSessionQuestions.length}
                     >
                       <ActionIcon name="review" tone="coral" />
                       Réviser mes erreurs
