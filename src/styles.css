@@ -7623,6 +7623,13 @@ a {
     overflow-y: auto;
   }
 
+  .web-runtime.active-quiz:not(.quiz-completed) {
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
   .web-runtime.active-quiz:not(.quiz-completed) .quiz-session-grid {
     display: grid;
     height: auto;
@@ -7638,6 +7645,20 @@ a {
     );
     max-height: none;
     overflow: visible;
+  }
+
+  /* Mobile web: keep one natural scrolling surface for the whole question.
+     Nested scrolling in the answers could trap touch gestures on phones. */
+  .web-runtime.active-quiz:not(.quiz-completed) .answer-grid {
+    flex: 0 0 auto;
+    min-height: auto;
+    overflow: visible;
+    overscroll-behavior: auto;
+  }
+
+  .web-runtime.active-quiz:not(.quiz-completed) .quiz-editorial-intro-after-answers {
+    flex: 0 0 auto;
+    margin-top: 4px;
   }
 
   .web-runtime.active-quiz:not(.quiz-completed) .quiz-learning-rail {

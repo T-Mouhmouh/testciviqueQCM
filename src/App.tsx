@@ -3018,12 +3018,6 @@ export default function App() {
           {session && currentQuestion && (
             <>
               <section className="panel section-span-3 quiz-panel">
-                {!isNativeRuntime() && (
-                  <div className="quiz-editorial-intro">
-                    <span>Exercice corrigé</span>
-                    <p>Réponds à la question puis consulte l'explication, le mémo et les sources. En mode exercice, le contenu pédagogique fait partie de chaque étape.</p>
-                  </div>
-                )}
                 <div className="quiz-topbar">
                   <div className="quiz-topbar-meta">
                     <span className="badge subtle">{currentQuestion.theme}</span>
@@ -3132,6 +3126,13 @@ export default function App() {
                     );
                   })}
                 </div>
+
+                {!isNativeRuntime() && (
+                  <div className="quiz-editorial-intro quiz-editorial-intro-after-answers">
+                    <span>Exercice corrigé</span>
+                    <p>Réponds à la question puis consulte l'explication, le mémo et les sources. En mode exercice, le contenu pédagogique fait partie de chaque étape.</p>
+                  </div>
+                )}
 
                 {(sessionFinished || (session.mode === 'practice' && typeof currentAnswer === 'number')) && currentStudyPack && (
                     <div
