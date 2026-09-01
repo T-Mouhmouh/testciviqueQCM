@@ -1082,67 +1082,6 @@ function QuizInlineAdSlot({ mobileAdsReady }: { mobileAdsReady: boolean }) {
   );
 }
 
-type WebAdConfig = {
-  client?: string;
-  quizRail?: string;
-  quizBreak?: string;
-};
-
-function getWebAdConfig() {
-  const config = (window as Window & { TEST_CIVIQUE_ADS?: WebAdConfig }).TEST_CIVIQUE_ADS;
-  return {
-    client: String(config?.client ?? '').trim(),
-    quizRail: String(config?.quizRail ?? '').trim(),
-    quizBreak: String(config?.quizBreak ?? '').trim(),
-  };
-}
-
-function WebAdSenseSlot({ placement, className = '' }: { placement: 'quizRail' | 'quizBreak'; className?: string }) {
-  const adRef = useRef<HTMLModElement | null>(null);
-  const requestedRef = useRef(false);
-  const config = getWebAdConfig();
-  const slot = config[placement];
-  const enabled = !isNativeRuntime() && config.client.startsWith('ca-pub-') && /^\d+$/.test(slot);
-
-  useEffect(() => {
-    if (!enabled || requestedRef.current || !adRef.current) return;
-
-    let script = document.querySelector<HTMLScriptElement>('script[src*="pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"]');
-    if (!script) {
-      script = document.createElement('script');
-      script.async = true;
-      script.crossOrigin = 'anonymous';
-      script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(config.client)}`;
-      document.head.appendChild(script);
-    }
-
-    requestedRef.current = true;
-    const timeoutId = window.setTimeout(() => {
-      const runtime = window as Window & { adsbygoogle?: unknown[] };
-      runtime.adsbygoogle = runtime.adsbygoogle || [];
-      runtime.adsbygoogle.push({});
-    }, 250);
-    return () => window.clearTimeout(timeoutId);
-  }, [config.client, enabled]);
-
-  if (!enabled) return null;
-
-  return (
-    <aside className={`web-ad-slot ${className}`} aria-label="Emplacement publicitaire">
-      <span className="web-ad-label">Publicité</span>
-      <ins
-        ref={adRef}
-        className="adsbygoogle"
-        style={{ display: 'block' }}
-        data-ad-client={config.client}
-        data-ad-slot={slot}
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      />
-    </aside>
-  );
-}
-
 function WebTrainingHeader() {
   if (isNativeRuntime()) return null;
   return (
@@ -3239,7 +3178,7 @@ export default function App() {
               {!isNativeRuntime() && currentQuestion && !sessionFinished && (
                 <aside
                   className="quiz-learning-rail"
-                  aria-label="Méthode de révision et publicité"
+                  aria-label="Méthode de révision"
                 >
                   <section className="quiz-learning-card">
                     <p className="section-kicker">Repère utile</p>
@@ -3265,7 +3204,6 @@ export default function App() {
                       <strong>{currentQuestion.theme}</strong>
                     </div>
                   </section>
-                  {session.mode === 'practice' && <WebAdSenseSlot placement="quizRail" className="web-ad-rail" />}
                 </aside>
               )}
 
@@ -3305,9 +3243,6 @@ export default function App() {
                           ? 'Préparation de la suite...'
                           : `Continuer vers la question ${activeMilestonePause.nextIndex + 1}`}
                       </button>
-                      {!isNativeRuntime() && session?.mode === 'practice' && (
-                        <WebAdSenseSlot placement="quizBreak" className="web-ad-pause" />
-                      )}
                       {mobileAdsReady && (
                         <p className="muted-line">
                           Sur Android, une courte pub peut s&apos;afficher avant la reprise.

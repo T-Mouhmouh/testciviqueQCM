@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://prep-testcivique.fr/</loc></url>
+  <url><loc>https://prep-testcivique.fr/guides/examen-civique-2026.html</loc></url>
+  <url><loc>https://prep-testcivique.fr/guides/carte-sejour-pluriannuelle.html</loc></url>
+  <url><loc>https://prep-testcivique.fr/guides/carte-resident.html</loc></url>
+  <url><loc>https://prep-testcivique.fr/guides/naturalisation.html</loc></url>
+  <url><loc>https://prep-testcivique.fr/guides/plan-revision.html</loc></url>
   <url><loc>https://prep-testcivique.fr/about.html</loc></url>
   <url><loc>https://prep-testcivique.fr/privacy-policy.html</loc></url>
 </urlset>
