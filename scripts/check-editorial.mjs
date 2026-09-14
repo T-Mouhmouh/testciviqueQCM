@@ -7,7 +7,7 @@ import { courses } from '../content/courses.mjs';
 const root = 'dist';
 const pages = ['index.html', 'cours/index.html', ...courses.map((course) => `cours/${course.slug}.html`),
   'guides/carte-resident.html', 'guides/carte-sejour-pluriannuelle.html', 'guides/naturalisation.html',
-  'guides/examen-civique-2026.html', 'guides/plan-revision.html', 'about.html'];
+  'guides/examen-civique-2026.html', 'guides/plan-revision.html', 'guides/analyser-resultats.html', 'about.html'];
 const documents = new Map();
 async function document(path) {
   if (!documents.has(path)) documents.set(path, load(await readFile(join(root, path), 'utf8')));
@@ -17,6 +17,8 @@ let checkedLinks = 0;
 for (const path of pages) {
   const $ = await document(path);
   assert.equal($('h1').length, 1, `${path}: one h1 required`);
+  assert.equal($('link[rel=canonical]').attr('href'), `https://prep-testcivique.fr/${path.replace(/index\.html$/, '')}`, `${path}: canonical URL`);
+  assert.ok(!($('meta[name=robots]').attr('content') || '').includes('noindex'), `${path}: editorial page must be indexable`);
   for (const element of $('a[href]').toArray()) {
     const url = new URL($(element).attr('href'), `https://prep-testcivique.fr/${path}`);
     if (url.origin !== 'https://prep-testcivique.fr') continue;
@@ -44,4 +46,15 @@ for (const path of ['app.html', 'about.html', 'privacy-policy.html', 'cours/inde
 }
 const sitemap = await readFile(join(root, 'sitemap.xml'), 'utf8');
 for (const course of courses) assert.ok(sitemap.includes(`/cours/${course.slug}.html`));
+assert.ok(sitemap.includes('/guides/analyser-resultats.html'));
+const guide = await document('guides/analyser-resultats.html');
+assert.equal(guide('.study-table tbody tr').length, 5);
+let right = 0, total = 0;
+for (const row of guide('.study-table tbody tr').toArray()) {
+  const [correct, count] = guide(row).find('td').first().text().split('/').map(Number);
+  right += correct; total += count;
+}
+assert.equal(right, 32);
+assert.equal(total, 40);
+assert.ok(guide('.study-sheet').length, 'Printable revision worksheet missing');
 console.log(`PASS: ${pages.length} editorial pages, ${checkedLinks} internal links, 15 corrected exercises and ad exclusions.`);

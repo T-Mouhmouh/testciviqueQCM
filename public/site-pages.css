@@ -192,3 +192,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.table-scroll { max-width: 100%; overflow-x: auto; margin: 24px 0; }
+.study-table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 1.6; }
+.study-table caption { padding: 12px 0; text-align: left; font-weight: 700; }
+.study-table th, .study-table td { padding: 12px; border: 1px solid #ccd7df; text-align: left; }
+.study-table thead { color: #fff; background: #153f76; }
+.study-table tbody th { font-weight: 600; }
+.study-table tbody tr:nth-child(even) { background: #eef6f5; }
+.error-actions dt { margin-top: 22px; font-weight: 800; color: #153f76; }
+.error-actions dd { margin: 8px 0 0; color: #40505f; line-height: 1.75; }
+.study-sheet { padding: 12px 24px; border: 2px solid #137b8f; background: #f7f9fa; }
+.study-sheet p { padding-bottom: 12px; border-bottom: 1px solid #ccd7df; }
+.table-scroll:focus-visible { outline: 3px solid #f0a33a; outline-offset: 3px; }
+@media print {
+  .public-header, .public-footer, .article-aside, .related-band, .skip-link { display: none; }
+  .article-main { width: 100%; padding: 0; }
+  .article-layout { display: block; }
+  .article-heading h1 { font-size: 30px; }
+  .article-content p, .article-content li { font-size: 11pt; }
+  .table-scroll { overflow: visible; }
+  .study-sheet, .study-table tr { break-inside: avoid; }
+}
