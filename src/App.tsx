@@ -9,6 +9,7 @@ import {
 import { examTrackCatalog, normalizeQuestionPrompt, sourceLookup } from './data/practice';
 import { themeMeta } from './data/theme-meta';
 import { useQuestionAudio } from './hooks/use-question-audio';
+import { QuizRevisionGuide, WebQuizAd } from './WebQuizAdvertising';
 import {
   initializeMobileAds,
   setMobileBannerVisible,
@@ -1831,6 +1832,7 @@ export default function App() {
     const milestoneKey = `${session.mode}:${session.startedAt}:${completedQuestionCount}`;
 
     if (
+      isNativeRuntime() &&
       !quizCompleted &&
       isForwardTransition &&
       hasNextQuestion &&
@@ -3204,7 +3206,12 @@ export default function App() {
                       <strong>{currentQuestion.theme}</strong>
                     </div>
                   </section>
+                  <WebQuizAd placement="rail" />
                 </aside>
+              )}
+
+              {!isNativeRuntime() && currentQuestion && !sessionFinished && !activeMilestonePause && (
+                <QuizRevisionGuide />
               )}
 
               {activeMilestonePause && (
