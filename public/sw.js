@@ -1,4 +1,4 @@
-const CACHE_NAME = 'test-civique-qcm-v10';
+const CACHE_NAME = 'test-civique-qcm-v11';
 const APP_SHELL = [
   '/',
   '/index.html',
