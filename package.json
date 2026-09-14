@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "prebuild": "node scripts/build-courses.mjs",
+    "predev": "node scripts/build-courses.mjs",
     "generate:data": "node scripts/fetch-official-data.mjs",
     "dev": "vite",
     "build": "tsc && vite build",

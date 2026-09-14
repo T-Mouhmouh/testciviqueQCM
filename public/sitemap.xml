@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://prep-testcivique.fr/</loc></url>
+  <url><loc>https://prep-testcivique.fr/cours/</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://prep-testcivique.fr/cours/valeurs-republique.html</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://prep-testcivique.fr/cours/institutions.html</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://prep-testcivique.fr/cours/droits-devoirs.html</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://prep-testcivique.fr/cours/histoire-geographie.html</loc><lastmod>2026-09-14</lastmod></url>
+  <url><loc>https://prep-testcivique.fr/cours/vie-quotidienne.html</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://prep-testcivique.fr/guides/examen-civique-2026.html</loc></url>
   <url><loc>https://prep-testcivique.fr/guides/carte-sejour-pluriannuelle.html</loc></url>
   <url><loc>https://prep-testcivique.fr/guides/carte-resident.html</loc></url>
